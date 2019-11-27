@@ -52,14 +52,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 3vw 0; */
+    padding: 3vw 0;
     margin: .8em auto 1.3em auto;
     border-radius: 3em;
     max-width: 1000px;
+    font-size: 25px;
 }
 
 header>img {
-    max-width: 2.5em;
+    max-width: 5em;
     float: left;
     margin: 0 4vw 0 0;
 }
@@ -106,7 +107,7 @@ main section {
 }
 
 nav ul {
-    /* display: flex; */
+    display: flex;
     margin: .8em auto 1.3em auto;
     padding: 1.2em;
     border-radius: 1em;
@@ -115,6 +116,10 @@ nav ul {
     overflow: hidden;
     padding: 0;
     background-color: rgba(255, 90, 90, 0.4);
+}
+
+nav ul li {
+    flex: 1 1 100%;
 }
 
 nav ul a {
