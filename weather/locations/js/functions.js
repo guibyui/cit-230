@@ -434,3 +434,6 @@ function getKeyword(shortForecast) {
     }
     return keyword;
 }
+
+mainContent.setAttribute("class", ""); // Remove .hide from #main-content
+statusBox.setAttribute("class", "hide"); // Add .hide to statusBox

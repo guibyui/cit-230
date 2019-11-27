@@ -20,7 +20,6 @@ body {
     background-color: #520202;
     color: white;
     font-size: 16px;
-    /* 1 EM = 16px */
     font-family: "Times New Roman", Arial, Helvetica, sans-serif;
     min-height: 500px;
     /* background-image: var(--dynamic-weather-background); */
@@ -460,8 +459,7 @@ img.min {
     width: 20px;
 }
 
-/* .column-image {
-    border-radius: 1em;
-    width: 100%;
-    border: .2em #bbbbbb;
-} */
+.hide {
+    display: none;
+    visibility: collapse;
+  }
