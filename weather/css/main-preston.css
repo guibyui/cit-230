@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Patua+One&display=swap');
+:root {
+  --dynamic-weather-background: "";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: .8em auto 1.3em auto;
+  min-width: 320px;
+
+}
+
+body {
+  background-color: #bbb;
+  color: white;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+  min-height: 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin: 0;
+}
+
+header {
+  overflow: hidden;
+  background-color: #520202;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3vw 0;
+  border-radius: 2em;
+}
+
+header>img {
+  max-width: 2.5em;
+  float: left;
+  margin: 0 4vw 0 0;
+}
+
+header>section>h1 {
+  font-size: 6vw;
+  margin: 0;
+}
+
+header>section>span {
+  font-size: .8em;
+  font-style: italic;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #bbb;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 2em;
+
+}
+
+nav button {
+  color: #06090F;
+  border: none;
+  width: 100%;
+  padding: 2em 0 2em 0;
+  border-radius: 2em;
+  bottom: 0;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul a {
+  color: #06090F;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul a:hover {
+  color: red;
+  background-color: aliceblue;
+}
+
+nav ul a:active {
+  background-color: black;
+}
+
+.activenav nav ul a {
+  background-color: rgb(168, 21, 21);
+}
+
+/* menu */
+.navigation li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+/* main */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: .5em;
+  row-gap: .5em;
+
+}
+
+main section {
+  display: block;
+  border: #ff0000 solid;
+  border-radius: 2em;
+  
+}
+
+.location {
+  color: black;
+  display: block;
+  border: #ff0000 solid;
+  text-align: center;
+  background-color: rgb(489, 135, 147, 0.4);
+}
+
+.location h1 {
+  margin: .5em .5em 0 .5em;
+}
+
+.current-condition {
+  background-image: var(--dynamic-weather-background);
+  background-color: rgb(489, 135, 147, 0.4);
+  padding: 0;
+  text-align: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  list-style: none;
+  
+}
+
+.current-temp {
+  grid-column: 3/5;
+  font-size: 4em;
+}
+
+.feels-like {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  margin: .8em 0;
+}
+
+.low-temp {
+  color: blue;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin-top: .2em;
+  font-size: 2em;
+}
+
+.high-temp {
+  grid-column: 5/7;
+  grid-row: 1/2;
+  margin-top: .2em;
+  color: orangered;
+  font-size: 2em;
+}
+
+.wind {
+  grid-column: 3/5;
+  margin: .8em 0;
+}
+
+.gusts {
+  display: none;
+}
+
+footer {
+  background-color: #520202;
+  padding: 1em 0 1.5em 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: .7em;
+}
+
+/* Colors */
+
+.color-primary-0 {
+  color: #520202
+}
+
+.color-primary-1 {
+  color: #800303
+}
+
+.color-primary-2 {
+  color: #c71919
+}
+
+.color-primary-3 {
+  color: #e80707
+}
+
+.color-primary-4 {
+  color: #ff0000
+}
+
+/* section styling */
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+/* component container */
+.component-container {
+  position: relative;
+  font-size: 26px;
+  letter-spacing: -2px;
+  min-width: 300px;
+}
+
+/* graphical component elements */
+.component-circle {
+  background: radial-gradient(circle, transparent 40%, gray 40%);
+  border-radius: 100%;
+  height: 170px;
+  width: 170px;
+  margin: 65px auto 65px auto;
+  position: relative;
+}
+
+.ball {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background-color: #c78119;
+  position: relative;
+  top: 1px;
+  left: 62px;
+}
+
+#forecast img {
+  max-width: 28px;
+  max-height: 28px;
+}
+
+/* center of component ring */
+.center1 {
+  position: absolute;
+  top: 64px;
+  left: 58px;
+  font-size: 36px;
+}
+
+.wind-forecast-c1 {
+  position: absolute;
+  top: 68px;
+  left: 68px;
+  font-size: 36px;
+}
+
+.forecast-c1 {
+  position: absolute;
+  top: 68px;
+  left: 66px;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* component inner component ring */
+.inner1 {
+  position: absolute;
+  top: 17px;
+  left: 114px;
+}
+
+.inner2 {
+  position: absolute;
+  top: 40px;
+  left: 136px;
+}
+
+.inner3 {
+  position: absolute;
+  top: 75px;
+  left: 145px;
+}
+
+.inner4 {
+  position: absolute;
+  top: 115px;
+  left: 134px;
+}
+
+.inner5 {
+  position: absolute;
+  top: 138px;
+  left: 110px;
+}
+
+.inner6 {
+  position: absolute;
+  top: 146px;
+  left: 77px;
+}
+
+.inner7 {
+  position: absolute;
+  top: 135px;
+  left: 44px;
+}
+
+.inner8 {
+  position: absolute;
+  top: 115px;
+  left: 20px;
+}
+
+.inner9 {
+  position: absolute;
+  top: 85px;
+  left: 12px;
+}
+
+.inner10 {
+  position: absolute;
+  top: 50px;
+  left: 11px;
+}
+
+.inner11 {
+  position: absolute;
+  top: 20px;
+  left: 34px;
+}
+
+.inner12 {
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+
+/* component outer ring */
+.outer1 {
+  position: absolute;
+  top: -20px;
+  left: 130px;
+}
+
+.outer2 {
+  position: absolute;
+  top: 15px;
+  left: 168px;
+}
+
+.outer3 {
+  position: absolute;
+  top: 72px;
+  left: 182px;
+}
+
+.outer4 {
+  position: absolute;
+  top: 120px;
+  left: 168px;
+}
+
+.outer5 {
+  position: absolute;
+  top: 160px;
+  left: 130px;
+}
+
+.outer6 {
+  position: absolute;
+  top: 175px;
+  left: 70px;
+}
+
+.outer7 {
+  position: absolute;
+  top: 160px;
+  left: 10px;
+}
+
+.outer8 {
+  position: absolute;
+  top: 120px;
+  left: -28px;
+}
+
+.outer9 {
+  position: absolute;
+  top: 72px;
+  left: -40px;
+}
+
+.outer10 {
+  position: absolute;
+  top: 15px;
+  left: -28px;
+}
+
+.outer11 {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+.outer12 {
+  position: absolute;
+  top: -35px;
+  left: 70px;
+}
+
+/* end component styling */
+
+/* ball position styling */
+.b1 {position: absolute; top: 10px; left: 101px;}
+.b2 {position: absolute; top: 35px; left: 125px;}
+.b3 {position: absolute; top: 70px; left: 133px;}
+.b4 {position: absolute; top: 101px; left: 123px;}
+.b5 {position: absolute; top: 123px; left: 101px;}
+.b6 {position: absolute; top: 133px; left: 68px;}
+.b7 {position: absolute; top: 123px; left: 32px;}
+.b8 {position: absolute; top: 101px; left: 10px;}
+.b9 {position: absolute; top: 70px; left: 0px;}
+.b10 {position: absolute; top: 35px; left: 8px;}
+.b11 {position: absolute; top: 10px; left: 32px;}
+.b12 {position: absolute; top: 0px; left: 68px;}
+/* end component styling */
+
+/* dynamic hide */
+.hide {
+  display: none;
+  visibility: collapse;
+}
+
+#status {
+  margin: 0 auto;
+  background-color: #520202;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  /* min-height: 26em; */
+}

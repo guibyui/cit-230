@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CIT 230: Web Frontend Development">
+    <meta name="author" content="Gui Nascimento">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="/weather/locations/css/main.css" media="screen">
+    <link rel="stylesheet" href="/weather/locations/css/medium.css" media="screen and (min-width: 476px)">
+    <link rel="stylesheet" href="/weather/locations/css/large.css" media="screen and (min-width: 801px)">
+    <link rel='icon' href="/weather/locations/images/favicon.ico" type='image/x-icon' />
+
+    <title id="page-title"> | MyFavoriteWeather.com</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <img id="logo" src="/weather/locations/images/weather-logo.png" alt="Logo with a sun behind a cloud">
+            <section class="headings">
+                <h1>My Favorite Weather</h1>
+                <div class="tagline"><i>"Never leave home unprepared again!"</i></div>
+            </section>
+        </header>
+
+        <nav id="page-nav">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primary" class="hide">
+                <li><a href="/index.html" title="Home Page">Home</a></li>
+                <li><a href="/weather/locations/preston.html" title="Page on Preston">Preston</a></li>
+                <li><a href="/weather/locations/soda-springs.html" title="Page on Soda Springs">Soda Springs</a></li>
+                <li><a href="#" title="Page on Fish Haven">Fish Haven</a></li>
+                <li><a href="#" title="Page on Storm Center">Storm Center</a></li>
+                <li><a href="#" title="Gallery Page">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <!-- <section id="status">Please be patient while I get your weather information.</section> -->
+
+        <main id="main-content" class="hide">
+
+            <section class="location">
+                <h1 id="contentHeading">PRESTON, IDAHO</h1>
+                <p id="location"> 42° 05' 25.80" N, -111° 52' 18.59" W</p>
+            </section>
+            <div id="compContainer">
+                <section class="current">
+                    <h2>Current Conditions</h2>
+                    <div>
+                        <ul id="todayTemp">
+                            <li id="temp">60&deg;F</li>
+                            <li id="feelTemp"></li>
+                            <li id="high">80&deg;</li>
+                            <li id="low">45&deg;</li>
+                            <li id="windSpeed"><span class="wi wi-strong-wind"></span> 5mph</li>
+                            <li id="gusts">Gusts: 10mph</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="temperature">
+                    <h2>Temperature</h2>
+                    <div class="wrapper">
+                        <div class="circle">
+                            <div class="center">&nbsp;&deg;F</div>
+                            <div class="o1">85&deg;</div>
+                            <div class="o2">82&deg;</div>
+                            <div class="o3">83&deg;</div>
+                            <div class="o4">84&deg;</div>
+                            <div class="o5">85&deg;</div>
+                            <div class="o6">86&deg;</div>
+                            <div class="o7">87&deg;</div>
+                            <div class="o8">88&deg;</div>
+                            <div class="o9">89&deg;</div>
+                            <div class="o10">90&deg;</div>
+                            <div class="o11">81&deg;</div>
+                            <div class="o12">82&deg;</div>
+                            <div class="i1">1</div>
+                            <div class="i2">2</div>
+                            <div class="i3">3</div>
+                            <div class="i4">4</div>
+                            <div class="i5">5</div>
+                            <div class="i6">6</div>
+                            <div class="i7">7</div>
+                            <div class="i8">8</div>
+                            <div class="i9">9</div>
+                            <div class="i10">10</div>
+                            <div class="i11">11</div>
+                            <div class="i12">12</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="wind">
+                    <h2>Wind</h2>
+                    <div class="wrapper">
+                        <div class="circle">
+                            <div class="center"></div>
+                            <div class="o1">85</div>
+                            <div class="o2">82</div>
+                            <div class="o3">83</div>
+                            <div class="o4">84</div>
+                            <div class="o5">85</div>
+                            <div class="o6">86</div>
+                            <div class="o7">87</div>
+                            <div class="o8">88</div>
+                            <div class="o9">89</div>
+                            <div class="o10">90</div>
+                            <div class="o11">81</div>
+                            <div class="o12">82</div>
+                            <div class="i1">1</div>
+                            <div class="i2">2</div>
+                            <div class="i3">3</div>
+                            <div class="i4">4</div>
+                            <div class="i5">5</div>
+                            <div class="i6">6</div>
+                            <div class="i7">7</div>
+                            <div class="i8">8</div>
+                            <div class="i9">9</div>
+                            <div class="i10">10</div>
+                            <div class="i11">11</div>
+                            <div class="i12">12</div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="conditions">
+                    <h2>Conditions</h2>
+                    <div class="wrapper">
+                        <div class="circle">
+                            <div class="center"></div>
+                            <div class="o1"></div>
+                            <div class="o2"></div>
+                            <div class="o3"></div>
+                            <div class="o4"></div>
+                            <div class="o5"></div>
+                            <div class="o6"></div>
+                            <div class="o7"></div>
+                            <div class="o8"></div>
+                            <div class="o9"></div>
+                            <div class="o10"></div>
+                            <div class="o11"></div>
+                            <div class="o12"></div>
+                            <div class="i1">1</div>
+                            <div class="i2">2</div>
+                            <div class="i3">3</div>
+                            <div class="i4">4</div>
+                            <div class="i5">5</div>
+                            <div class="i6">6</div>
+                            <div class="i7">7</div>
+                            <div class="i8">8</div>
+                            <div class="i9">9</div>
+                            <div class="i10">10</div>
+                            <div class="i11">11</div>
+                            <div class="i12">12</div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <footer>
+            <br> &copy;<span id="copyYear"></span> MyFavoriteWeather | Gui Nascimento <br>Today: <span
+                id="today"></span>
+        </footer>
+    </div>
+
+    <script src="/weather/locations/js/functions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+@media only screen and (min-width: 476px) {
+    .main-contant {
+        max-width: 800px;
+      }
+
+    header {
+        font-size: 3vw;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .header {
+        font-size: 1.8rem;
+        padding: 1em;
+        border-radius: 1em;
+    }
+
+    .header-logo {
+        width: 8vw;
+        margin: .8rem .8rem .8rem auto;
+    }
+}

@@ -1,0 +1,73 @@
+
+@import "/css/normalize.css";
+
+* {
+   box-sizing: border-box;
+   margin: 1;
+}
+
+
+body {
+   background-color: rgb(61, 8, 8);
+   color: white;
+}
+
+header, footer {
+   background-color: rgb(116, 15, 15);
+   min-height: 60px;
+   text-align: center;
+   clear: both;
+}
+
+nav {
+   background-color: rgb(0, 0, 0);
+   /* text-align: center; */
+}
+
+nav a:hover {
+   background-color: white;
+}
+
+.flex {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+}
+
+[data-src] {
+   min-width: 100px;
+   min-height: 100px;
+ }
+ 
+ section>img[data-src] {
+   filter: blur(0.2em);
+ }
+ 
+ section>img {
+   filter: blur(0em);
+   transition: filter 0.5s;
+ }
+
+section {
+  max-width: 800px;
+  background-color: rgb(116, 15, 15);
+  margin: 1em;
+  padding: 1em;
+  flex: 1 1 auto;
+}
+
+.flex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.main-container {
+   max-width: 1100px;
+   width: 100%;
+   margin: 0 auto;
+ }
+
+ img {
+   width: 100%;
+ }
