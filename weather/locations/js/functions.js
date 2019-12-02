@@ -462,7 +462,7 @@ function meterToFeet(meters) {
 //function for meters per second to miles per hour
 function mpsToMph(metersPerSec) {
     const milesPerHour = metersPerSec * 2.2369;
-    return milesPerHour;
+    return milesPerHour.floor();
 }
 
 // Gets current weather information for a specific weather station from the NWS API
