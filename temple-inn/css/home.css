@@ -1,0 +1,44 @@
+* {
+   color: white;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   /* background-image: url("/temple-inn/images/sao-paulo-temple.jpg"); */
+   max-width: 80%;
+   margin: auto;
+   /* color: white; */
+   background-repeat: no-repeat;
+}
+
+header {
+   background-color: rgb(110, 110, 110);
+   text-align: center;
+   font-size: 18vw;
+   margin: 1%;
+}
+
+nav ul {
+   display: flex;
+   background-color: rgb(110, 110, 110);
+   list-style: none;
+   flex-direction: column;
+   text-align: center;
+   margin: 1%;
+
+}
+
+nav ul a {
+   text-align: center;
+   /* color: white; */
+}
+
+nav ul li {
+   flex: 100%;
+}
+
+.search {
+   display: flex;
+   justify-content: space-evenly;
+}

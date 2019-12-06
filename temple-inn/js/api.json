@@ -1,0 +1,77 @@
+{
+  "Logan":{
+  "2019": {
+    "December": [
+      "Tuesday, 24",
+      "Wednesday, 25",
+      "Tuesday, 31 (Limited Hours)"
+  ]
+},
+
+"2020": {
+  "January": 
+    "Wednesday, 1",
+  "February": 
+    "Monday, 10 - Monday, 24",
+  "April": 
+    "April, 4",
+  "July": [
+    "Saturday, 4",
+    "Monday, 20 - Friday, 31"
+    ],
+  "August":
+    "Sunday, 1 - Tuesday, 3",
+  "October": 
+    "Saturday, 3",
+  "November": [
+    "Wednesday, 25 (Limited Hours)",
+    "Thursday, 26"
+    ],
+  "December ": [
+    "Thursday, 24",
+    "Friday, 25",
+    "Thursday, 31 (Limited Hours)"
+    ]
+}
+},
+
+  "Jordan River":{
+  "2019": {
+    "December": [
+      "Monday, 9",
+      "Tuesday, 24",
+      "Wednesday, 25",
+      "Tuesday, 31 (Limited Hours)"
+  ]
+},
+
+"2020": {
+  "January": 
+    "Wednesday, 1",
+  "April": 
+    "Saturday, 4",
+  "June":
+    "Monday, 8 - Monday, 22",  
+  "July": [
+    "Saturday, 4",
+    "Friday, 24"
+    ],
+  "October": 
+    "Saturday, 3",
+  "November": [
+    "Wednesday, 25 (Limited Hours)",
+    "Thursday, 26"
+    ],
+  "December ": [
+    "Monday, 7 - Monday, 21",
+    "Thursday, 24",
+    "Friday, 25",
+    "Thursday, 31 (Limited Hours)"
+    ]
+},
+"2021": {
+  "January":
+    "Friday, 1"
+}
+}
+}
