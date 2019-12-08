@@ -1,0 +1,127 @@
+/*font import*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Ubuntu&display=swap');
+
+/*import normalize.css*/
+@import "/css/normalize.css";
+
+body {
+   background-color: #3d0e0e;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   /* 18px = 1em */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Times New Roman', Times, serif;
+   margin: 1em 1em 1em 0em;
+}
+
+header {
+   text-align: center;
+}
+
+footer {
+   font-size: .8em;
+   padding: 1.5em;
+   background-color: white;
+   border-radius: 1em;
+   margin: 1em 0 .5em 0;
+   max-width: 920px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+main {
+   max-width: 760px;
+   display: grid;
+   grid-template-columns: 1fr;
+   font-size: 1rem;
+}
+
+main section {
+   margin: 0.25rem;
+   border-radius: 1rem;
+   padding: 0 1rem;
+   background-color: white;
+}
+
+nav ul {
+   list-style: none;
+   font-size: 1rem;
+}
+
+.column-image {
+   border-radius: 1em;
+   width: 100%;
+   border: .2em #252525;
+}
+
+.main-container {
+   max-width: 767px;
+   margin: 1.3em auto 1.3em auto;
+   padding: 1.2em;
+   border-radius: 1em;
+   background-color: #252525;
+}
+
+.subheader {
+   font-size: 1.3em;
+}
+
+.title-header {
+   font-size: 3.5vw;
+   padding: 1em;
+   margin: .5em 0 .5em 0;
+   background-color: white;
+   border-radius: 1em;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@media only screen and (min-width: 461px) {
+   header {
+      font-size: 3vw;
+   }
+
+   main {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   main section:nth-child(3) {
+      grid-column: span 2;
+   }
+
+
+   .title-header {
+      font-size: 1.8rem;
+      padding: 1em;
+      border-radius: 1em;
+   }
+}
+
+@media only screen and (min-width: 1060px) {
+   header {
+      font-size: 3vw;
+   }
+
+   main {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   main section:nth-child(3) {
+      grid-column: span 1;
+   }
+
+
+   .title-header {
+      font-size: 1.8rem;
+      padding: 1em;
+      border-radius: 1em;
+   }
+}

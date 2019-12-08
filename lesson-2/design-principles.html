@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="normalize" href="/css/normalize.css">
-   <link rel="stylesheet" href="/css/design.css">
-   <title>Lesson 2</title>
+   <meta name="author" content="Gui Nascimento">
+   <meta name="description"
+      content="Design principles document which talks about the elements of design for a web page.">
+   <title>Design Principles</title>
+   <link rel="stylesheet" href="./css/design-style-main.css" media="screen">
+   <script src="./js/design-js.js" async></script>
 </head>
+
 <body>
-   <header>
-         <h1 class="title">Gui Nascimento</h1>
-   </header>
-   
-   <nav>
-      <ul>
-         <li><a class="home" href="/">Home</a></li>
-      </ul>
-   </nav>
-
-     <main>
-      <div class="grid">
-         <div class="first">
-            <h2>Proximity</h2>
-            <a href="https://dtpintro.weebly.com/parc.html">Proximity is used to group the links on the navigation bar</a>
-            <br> 
-            <img class="img-proximity" src="/images/Proximity.PNG" alt="Image of messed up words in a browser.">
-         </div>
-         <div class="second">
-            <h2>Alignment</h2>
-            <a href="https://rhetoricrevealed.wordpress.com/about/alignment/">One will find that the two girls are aligned</a>
-            <br>
-            <img class="img-alignment" src="/images/alignment.PNG" alt="Image of 2 girls aligned.">
-         </div>
-         <div class="last">
-            <h2>Rule of third</h2>
-            <a href="https://digital-photography-school.com/rule-of-thirds/">What is the Rule of Thirds?</a>
-            <img class="img-rot" src="/images/rule-of-thirds.PNG" alt="Image of messed up words in a browser.">
-         </div>
-      </div>
-        
-     </main>
-   
-
-<footer class="footer" align="center">
-      <br>2020 | Gui Nascimento | Idaho | BYUI Online Learning<br>
-      Last Updated: <span id="demo"></span>
-   
-   <script>
-      document.getElementById("demo").innerHTML = document.lastModified;
-   </script>
-   
-</footer>
-   
+   <div class="main-container">
+      <header>
+         <h1 class="title-header">Gui Nascimento | Design Principles</h1>
+      </header>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Return</a></li>
+         </ul>
+      </nav>
+      <main>
+         <section>
+            <h2 class="subheader">Proximity</h2>
+            <p><a href="https://dtpintro.weebly.com/parc.html">Proximity is used to group the links on the navigation
+                  bar</a></p>
+            <img src="./images/proximity.jpeg" alt="Image of messed up words" class="column-image">
+            <p>Items relating to each other should be grouped close together. When several items are in close proximity
+               to each other, they become one visual unit rather than several separate units.</p>
+            <p>Group related items together. Use spacing to convey visually what information is related. Bits of
+               information that are not related should not be in close proximity to other bits on the page.</p>
+            <!-- <p>As a side note, who doesn't appreciate the use of an interrobang, doubt or snark mark?</p> -->
+         </section>
+         <section>
+            <h2 class="subheader">Alignment</h2>
+            <p><a href="https://rhetoricrevealed.wordpress.com/about/alignment/">One will find that the two girls are
+                  aligned one after another</a></p>
+            <img src="./images/alignment.jpeg" alt="Image of 2 girls aligned." class="column-image">
+            <p>At first glance, there might not seem to be any sort of observable alignment, other than the text at the
+               top aligning with the bottom text. </p>
+            <p>Nevertheless, with a scrupulous eye, one will find that the two girls are aligned, along with the flag
+               and rocking chair behind the girls. </p>
+            <!-- <p>The second way contrast is used on this page is through the use of white text on a colored background. This negative space creates contrast from complex background, leading your eye to focus on and read the text. By using the difference in complexity, the website is able to communicate it's message of statistic driven marketing.</p> -->
+         </section>
+         <section>
+            <h2 class="subheader">Rule of third</h2>
+            <p><a href="https://digital-photography-school.com/rule-of-thirds/">Okay, but what in the world does the
+                  Rule of Thirds mean?</a></p>
+            <img src="./images/rule-of-thirds.jpeg" alt="Image of messed up words in a browser." class="column-image">
+            <p>The basic principle behind the rule of thirds is to imagine breaking an image down into thirds (both
+               horizontally and vertically) so that you have 9 parts. </p>
+            <p>The theory is that if you place points of interest in the intersections or along the lines that your
+               photo becomes more balanced and will enable a viewer of the image to interact with it more naturally.</p>
+         </section>
+      </main>
+      <footer>
+         &copy; <span id="copyright-year"></span> Gui Nascimento | Last updated:
+         <span id="lastupdated"></span>
+      </footer>
+   </div>
 </body>
+
 </html>
