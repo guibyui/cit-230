@@ -8,7 +8,6 @@ body {
    background-color: #3d0e0e;
    font-family: 'Times New Roman', Times, serif;
    font-size: 18px;
-   /* 18px = 1em */
 }
 
 h1,
@@ -51,13 +50,16 @@ main section {
    background-color: white;
 }
 
+nav ul a {
+   color: #fff;
+}
+
 nav ul {
    list-style: none;
    font-size: 1rem;
 }
 
 .column-image {
-   border-radius: 1em;
    width: 100%;
    border: .2em #252525;
 }
@@ -67,7 +69,7 @@ nav ul {
    margin: 1.3em auto 1.3em auto;
    padding: 1.2em;
    border-radius: 1em;
-   background-color: #252525;
+   background-color: #a81900;
 }
 
 .subheader {
@@ -79,9 +81,9 @@ nav ul {
    padding: 1em;
    margin: .5em 0 .5em 0;
    background-color: white;
-   border-radius: 1em;
    margin-left: auto;
    margin-right: auto;
+   border-radius: 1em;
 }
 
 @media only screen and (min-width: 461px) {
@@ -101,7 +103,6 @@ nav ul {
    .title-header {
       font-size: 1.8rem;
       padding: 1em;
-      border-radius: 1em;
    }
 }
 
