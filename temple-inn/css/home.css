@@ -9,11 +9,12 @@ body {
    margin: auto;
    /* color: white; */
    background-repeat: no-repeat;
+   background-color: burlywood;
+   
 }
 
 header {
-   
-
+   background-color: bisque;
 }
 
 nav ul {
@@ -22,6 +23,7 @@ nav ul {
    flex-direction: column;
    text-align: right;
    font-size: 20px;
+   background-color: bisque;
 }
 
 nav ul li {
@@ -30,7 +32,7 @@ nav ul li {
 }
 
 nav ul a {
-   color: #ffffff;
+   color: #000;
    text-decoration: none;
    padding: 0.2px 20px;
    border: 1px solid transparent;
@@ -54,6 +56,12 @@ nav ul a:active {
    float: left;
    width: 20%;
    height: auto;
+   
+}
+
+#page-nav {
+   margin: 2%;
+   background-color: bisque;
 }
 
 main {
@@ -117,4 +125,24 @@ main {
    background-position: center;
    text-align: center;
    font-size: 10vw;
+}
+
+.welcome {
+   margin: 2%;
+   padding: 2%;
+   background-color: bisque;
+   text-align: center;
+}
+
+.temple-link {
+   text-decoration: none;
+   font-size: 17px;
+   color: red;
+}
+
+footer {
+   margin: 2%;
+   padding: 2%;
+   text-align: center;
+   background-color: bisque;
 }
