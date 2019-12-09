@@ -1,3 +1,5 @@
+/* Main settings to all pages */
+
 * {
    font-family: 'Times New Roman', Times, serif;
    padding: 0;
@@ -10,7 +12,7 @@ body {
    /* color: white; */
    background-repeat: no-repeat;
    background-color: burlywood;
-   
+
 }
 
 header {
@@ -56,7 +58,7 @@ nav ul a:active {
    float: left;
    width: 20%;
    height: auto;
-   
+
 }
 
 #page-nav {
@@ -64,14 +66,16 @@ nav ul a:active {
    background-color: bisque;
 }
 
-main {
-   /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/sao-paulo-temple.jpg);
-   height: 100vh;
-   background-size: cover;
-   background-position: center;
+footer {
+   margin: 2%;
+   padding: 2%;
    text-align: center;
-   font-size: 10vw; */
+   background-color: bisque;
 }
+
+/* End of main settings of all pages */
+
+/* Home Page Settings */
 
 .button {
    position: absolute;
@@ -119,7 +123,7 @@ main {
 }
 
 .title {
-   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/sao-paulo-temple.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sao-paulo-temple.jpg);
    height: 66vh;
    background-size: cover;
    background-position: center;
@@ -137,12 +141,89 @@ main {
 .temple-link {
    text-decoration: none;
    font-size: 17px;
-   color: red;
 }
 
-footer {
-   margin: 2%;
-   padding: 2%;
-   text-align: center;
-   background-color: bisque;
+/* End of Home Page settings */
+
+/* Temples Page */
+
+main {
+   max-width: 760px;
+   /* display: grid; */
+   grid-template-columns: 1fr;
+   font-size: 1rem;
 }
+
+main section {
+   margin: 1rem;
+   border-radius: 1rem;
+   padding: 0 1rem;
+   background-color: white;
+}
+
+.column-image {
+   width: 100%;
+   border: .2em #252525;
+}
+
+.main-container {
+   max-width: 767px;
+   margin: 1.3em auto 1.3em auto;
+   padding: 1.2em;
+   border-radius: 1em;
+}
+
+.subheader {
+   font-size: 1.3em;
+}
+
+li { 
+   list-style: none;
+   text-decoration: none;
+   padding: 1px;
+}
+
+@media only screen and (min-width: 461px) {
+   header {
+      font-size: 3vw;
+   }
+
+   main {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   main section:nth-child(3) {
+      grid-column: span 2;
+   }
+
+
+   .title-header {
+      font-size: 1.8rem;
+      padding: 1em;
+   }
+}
+
+@media only screen and (min-width: 1060px) {
+   header {
+      font-size: 3vw;
+   }
+
+   main {
+      grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   main section:nth-child(3) {
+      grid-column: span 1;
+   }
+
+   .title-header {
+      font-size: 1.8rem;
+      padding: 1em;
+      border-radius: 1em;
+   }
+}
+
+/* End of temple page settings */
+
+/* Reservation Page Settings */
+
