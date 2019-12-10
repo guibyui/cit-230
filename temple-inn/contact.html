@@ -29,6 +29,51 @@
          </ul>
       </nav>
 
+      <section>
+         <form action="thank-you.html" method="GET">
+            <h1 class="booking-title">Book Your Room Now!</h1>
+            <p>All fields are required</p><br>
+            <fieldset>
+               <legend>Guest Information:</legend><br>
+               <label for="prefix">Prefix:</label>
+               <select name="prefix" required>
+                  <option value=""><i>select</i></option>
+                  <option value="none">None</option>
+                  <option value="mr">Mr.</option>
+                  <option value="mrs">Mrs.</option>
+                  <option value="ms">Ms.</option>
+                  <option value="miss">Miss</option>
+               </select><br>
+               <label for="first-name">First Name: </label><input id="first-name" type="text" name="name" required
+                  autofocus placeholder="Your first name" pattern="[a-zA-Z]{3,}"
+                  title="Please enter in more than three letters">
+               <br>
+               <label for="last-name">Last Name: </label><input id="last-name" type="text" name="name" required
+                  autofocus placeholder="Your last name" pattern="[a-zA-Z]{3,}"
+                  title="Please enter in more than three letters">
+               <br>
+               <label for="email">Email: </label><input id="email" type="text" name="email" required
+                  placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,}"
+                  title="Please enter in a valid email address">
+               <br>
+               <label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required
+                  placeholder="Please enter your phone number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                  title="Please enter in a phone number in this format: ### ### ####">
+               <select name="country" required>
+                  <option value="">select</option>
+                  <option value="US">US</option>
+                  <option value="BR">BR</option>
+               </select>
+               <br>
+               <div class="text-box">
+                  <div class="TextareaField"><label class="formElement-label" for="text">How can we help
+                        you?</label><textarea class="TextareaField-field" id="text" name="text"></textarea></div>
+               </div>
+            </fieldset>
+            <button class="contact-submit" type="submit">Submit</button>
+         </form>
+      </section>
+
 
 
 

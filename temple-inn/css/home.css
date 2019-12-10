@@ -4,7 +4,6 @@
    font-family: 'Times New Roman', Times, serif;
    padding: 0;
    margin: 0;
-
 }
 
 body {
@@ -91,7 +90,7 @@ footer {
    color: #fff;
    text-decoration: none;
    transition: 1s ease;
-   
+
 }
 
 .submit-btn {
@@ -106,7 +105,7 @@ footer {
    text-align: center;
    margin: -2%;
    padding: -2%;
-   
+
 }
 
 #submit-button {
@@ -114,7 +113,7 @@ footer {
    top: 70%;
    left: 50%;
    transform: translate(-50%, -50%);
-   
+
 }
 
 .btn:hover {
@@ -201,7 +200,7 @@ main section {
    font-size: 1.3em;
 }
 
-li { 
+li {
    list-style: none;
    text-decoration: none;
    padding: 1px;
@@ -249,4 +248,72 @@ li {
 
 /* End of temple page settings */
 
-/* Reservation Page Settings */
+/* Contact Page Settings */
+
+.TextareaField-field {
+   width: 90%;
+   height: 100px;
+   min-height: 5px;
+   vertical-align: middle;
+   padding-left: 5px;
+   padding-right: 9.5px;
+   margin: 2%;
+}
+
+.contact-submit {
+
+   letter-spacing: .3em;
+   line-height: 1.3em;
+   cursor: pointer;
+   font-weight: 700;
+   min-width: 130px;
+   padding: 12px 20px;
+   text-align: center;
+   text-transform: uppercase;
+   background-color: #000;
+   border: 1px solid #000;
+   color: #fff;
+}
+
+button {
+   background: none;
+   border-radius: 0;
+   margin: 2%;
+}
+
+/* End Contact Page */
+
+/* Thank you Page */
+
+#thank-you {
+   font-family: Monotype Garamond,Garamond,serif;
+   background-color: rgba(124, 124, 124, 0.4);
+   border-radius: 1em;
+   list-style: none;
+   width: 90%;
+   color: #fff;
+   /* top: 50%; */
+   /* left: 50%; */
+   /* align-items: center; */
+   margin: 2%;
+   padding: 0.8em;
+   text-align: center;
+   display: inline-block;
+   font-size: 12px;
+}
+
+#thank-you-hours {
+   /* background-color: rgba(124, 124, 124, 0.4); */
+   border-radius: 1em;
+   list-style: none;
+   width: 90%;
+   color: #fff;
+   /* top: 50%; */
+   /* left: 50%; */
+   /* align-items: center; */
+   margin: 2%;
+   padding: 0.8em;
+   text-align: center;
+   display: inline-block;
+   font-size: 20px;
+}
