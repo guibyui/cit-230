@@ -30,23 +30,23 @@
       </nav>
 
       <section>
-         <form action="reservations.html" method="GET">
+         <form action="thank-you.html" method="GET">
             <h1 class="booking-title">Book Your Room Now!</h1>
             <p>All fields are required</p><br>
             <fieldset>
                <legend>Guest Information:</legend><br>
-               <label for="first-name">First Name: </label><input type="text" name="first-name" id="first" required autofocus
-                  placeholder="Your User name" pattern="[a-zA-Z]{3,}"
+               <label for="first-name">First Name: </label><input id="first-name" type="text" name="name" required
+                  autofocus placeholder="Your first name" pattern="[a-zA-Z]{3,}"
                   title="Please enter in more than three letters">
-                  <br>
-               <label for="last-name">Last Name: </label><input type="text" name="last-name" id="last" required autofocus
-                  placeholder="Your User name" pattern="[a-zA-Z]{3,}"
+               <br>
+               <label for="last-name">Last Name: </label><input id="last-name" type="text" name="name" required
+                  autofocus placeholder="Your last name" pattern="[a-zA-Z]{3,}"
                   title="Please enter in more than three letters">
-                  <br>
-               <label for="email">Email: </label><input type="text" name="email" id="email" required
+               <br>
+               <label for="email">Email: </label><input id="email" type="text" name="email" required
                   placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,}"
                   title="Please enter in a valid email address">
-                  <br>
+               <br>
                <label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required
                   placeholder="Please enter your phone number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
                   title="Please enter in a phone number in this format: ### ### ####">
@@ -56,34 +56,36 @@
                   <option value="BR">BR</option>
                </select>
             </fieldset>
-         </form>
          <br>
 
          <fieldset>
             <legend>Booking Details: </legend><br>
             <label for="temple">Location:</label>
-            <select name="temple" required> 
+            <select name="temple" required>
                <option value=""><i>select</i></option>
                <option value="sao-paulo">São Paulo</option>
                <option value="logan">Logan</option>
                <option value="nauvoo">Nauvoo</option>
                <option value="jordan-river">Jordan River</option>
             </select><br>
-            <label for="date">Booking Date: </label> <input id="date" type="date" name="date" min="2019-12-09">
+            <label for="check-in-date">Check-in Date: </label> <input id="check-in-date" type="date" name="date" min="2019-12-09" required>
             <br>
-            <label for="number-of-guests">Number of Guests: </label><input id="number-of-guests" type="number"
-               name="number-of-guests" min="1" max="6">
+            <label for="check-out-date">Check-in Date: </label> <input id="check-out-date" type="date" name="date" min="2019-12-09" required>
+            <br>
+            <label for="numberOfGuests">Number of Guests: </label><input id="numberOfGuests" type="number"
+               name="numberOfGuests" min="1" max="6" required>
             <p>Do you require meals?</p>
             <label for="yesMeals">Yes: </label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
-            <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals">
+            <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals" >
             <br>
             <label for="balcony">Do you require a balcony? </label><input id="balcony" type="checkbox" name="balcony"
                value="yes" checked>
             <br>
             <!-- <a href="./thank-you.html" class="submit-btn" id="submit-button">SUBMIT</a> -->
-            <input type="image" value="">
+            <input type="image" src="./images/submit-button.png" alt="Submit">
 
          </fieldset>
+      </form>
 
 
       </section>
