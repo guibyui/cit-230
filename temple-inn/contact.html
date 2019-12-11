@@ -11,15 +11,26 @@
 
 <body>
    <header>
-      <div class="headers">
-         <div class="logo">
-            <img src="/temple-inn/images/hotel-logo.png">
-         </div>
-      </div>
-   </header>
+   <!-- Simulate a smartphone / tablet -->
+   <div class="mobile-container">
+
+         <!-- Top Navigation Menu -->
+         <div class="topnav">
+            <a href="./index.html" class="active">Temple-Inn & Suites</a>
+            <div id="myLinks">
+               <a href="./index.html">Home</a>
+               <a href="./temples.html">Temples</a>
+               <a href="./reservations.html">Reservation</a>
+               <a href="./services.html">Services</a>
+               <a href="./contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
+               <i class="fa fa-bars"></i>
+            </a>
+         </header>
    <main>
-      <nav id="page-nav">
-         <!-- <button onclick="toggleMenu()">&#9776;</button> -->
+      <!-- <nav id="page-nav">
+         <button onclick="toggleMenu()">&#9776;</button>
          <ul id="main-nav">
             <li><a href="./index.html" title="Home Page">Home</a></li>
             <li><a href="./temples.html" title="Temples Page">Temples</a></li>
@@ -27,7 +38,7 @@
             <li><a href="./services.html" title="Services Page">Services</a></li>
             <li><a href="./contact.html" title="Contact Page">Contact</a></li>
          </ul>
-      </nav>
+      </nav> -->
 
       <section>
          <form action="thank-you.html" method="GET">
@@ -83,7 +94,7 @@
       &copy; <span id="copyright-year"></span> Gui Nascimento | Last updated:
       <span id="lastupdated"></span>
    </footer>
-   <script src="/temple-inn/js/js.js"></script>
+   <script src="/temple-inn/js/home.js"></script>
    <script src="./js/footer.js"></script>
 
 </body>

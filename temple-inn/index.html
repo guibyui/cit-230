@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <meta name="author" content="Gui Nascimento">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="/temple-inn/css/home.css">
 
    <title>Temple-Inn & Suites</title>
@@ -13,24 +14,46 @@
 
 <body>
    <header>
-      <div class="headers">
+
+      <!-- Simulate a smartphone / tablet -->
+      <div class="mobile-container">
+
+         <!-- Top Navigation Menu -->
+         <div class="topnav">
+            <a href="./index.html" class="active">Temple-Inn & Suites</a>
+            <div id="myLinks">
+               <a href="./index.html">Home</a>
+               <a href="./temples.html">Temples</a>
+               <a href="./reservations.html">Reservation</a>
+               <a href="./services.html">Services</a>
+               <a href="./contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
+               <i class="fa fa-bars"></i>
+            </a>
+
+
+            <!-- <div class="headers">
          <div class="logo">
             <img src="/temple-inn/images/hotel-logo.png">
          </div>
-      </div>
+         <div>
+            <nav id="page-nav">
+               <button onclick="toggleMenu()">&#9776;</button>
+               <ul id="main-nav">
+                  <li><a href="./index.html" title="Home Page">Home</a></li>
+                  <li><a href="./temples.html" title="Temples Page">Temples</a></li>
+                  <li><a href="./reservations.html" title="Reservations Page">Reservations</a></li>
+                  <li><a href="./services.html" title="Services Page">Services</a></li>
+                  <li><a href="./contact.html" title="Contact Page">Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div> -->
    </header>
 
    <main>
-      <nav id="page-nav">
-         <!-- <button onclick="toggleMenu()">&#9776;</button> -->
-         <ul id="main-nav">
-            <li><a href="./index.html" title="Home Page">Home</a></li>
-            <li><a href="./temples.html" title="Temples Page">Temples</a></li>
-            <li><a href="./reservations.html" title="Reservations Page">Reservations</a></li>
-            <li><a href="./services.html" title="Services Page">Services</a></li>
-            <li><a href="./contact.html" title="Contact Page">Contact</a></li>
-         </ul>
-      </nav>
+
 
       <div class="title">
          <span class="main-title">Find your Temple</span>
@@ -47,6 +70,7 @@
          <a href="./reservations.html" class="btn">RESERVE NOW</a>
       </div>
 
+
       <div class="welcome">
          <h1>Welcome to Temple-Inn</h1>
          <p>Temple-Inn is a page created to help you reserve hotels in onder for to visit all the temples you want.</p>
@@ -61,8 +85,9 @@
       &copy; <span id="copyright-year"></span> Gui Nascimento | Last updated:
       <span id="lastupdated"></span>
    </footer>
-   <script src="/temple-inn/js/js.js"></script>
+   <script src="./js/home.js"></script>
    <script src="./js/footer.js"></script>
+   </div>
 </body>
 
 </html>
