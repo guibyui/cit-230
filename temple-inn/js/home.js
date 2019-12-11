@@ -1,6 +1,18 @@
 'use strict';
 
 
+function onPageLoad() {
+   //update copyright date
+   var todaysDate = new Date();
+   var currentYear = todaysDate.getFullYear();
+   document.getElementById('copyright-year').innerHTML = currentYear;
+   //get document.lastmodified
+   document.getElementById('lastupdated').innerHTML = document.lastModified;
+}
+//calls funciton after page has loaded
+window.onload = onPageLoad();
+
+
 function toggleMenuButton() {
    var x = document.getElementById("myLinks");
    if (x.style.display === "block") {
@@ -14,19 +26,13 @@ toggleMenuButton();
 
 
 
-function page(pg){
+function storeData(){
    sessionStorage.firstName = document.getElementById("first-name").value;
       
    window.location.assign("thank-you.html");
 }
 
-function initiate() {
-   document.getElementById("submition").addEventListener("click", function(){
-   page("thank-you.html");
-   });
-}
-
-// document.getElementById("storage").innerHTML = sessionStorage.firstName;
+document.getElementById("storage").innerHTML = sessionStorage.firstName;
 
 window.addEventListener("load", initiate);
 

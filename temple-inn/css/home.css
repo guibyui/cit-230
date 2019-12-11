@@ -225,7 +225,7 @@ footer {
 
 main {
    max-width: 760px;
-   /* display: grid; */
+   display: grid;
    grid-template-columns: 1fr;
    font-size: 1rem;
 }
@@ -269,7 +269,7 @@ li {
    }
 
    main section:nth-child(3) {
-      grid-column: span 2;
+      grid-column: span 1;
    }
 
 
@@ -283,12 +283,16 @@ li {
    header {
       font-size: 3vw;
    }
-
-   main {
-      grid-template-columns: 1fr 1fr 1fr;
+   
+   body {
+      max-width: 85%;
    }
 
-   main section:nth-child(3) {
+   main {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+
+   main section:nth-child(4) {
       grid-column: span 1;
    }
 
