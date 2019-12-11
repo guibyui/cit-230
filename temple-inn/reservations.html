@@ -5,97 +5,139 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="/temple-inn/css/home.css">
    <title>Reservations</title>
 </head>
 
 <body>
    <header>
-      <div class="headers">
-         <div class="logo">
-            <img src="/temple-inn/images/hotel-logo.png" alt="logo">
-         </div>
-      </div>
-   </header>
-   <main>
-      <nav id="page-nav">
-         <!-- <button onclick="toggleMenu()">&#9776;</button> -->
-         <ul id="main-nav">
-            <li><a href="./index.html" title="Home Page">Home</a></li>
-            <li><a href="./temples.html" title="Temples Page">Temples</a></li>
-            <li><a href="./reservations.html" title="Reservations Page">Reservations</a></li>
-            <li><a href="./services.html" title="Services Page">Services</a></li>
-            <li><a href="./contact.html" title="Contact Page">Contact</a></li>
-         </ul>
-      </nav>
 
-      <section>
-         <form action="confirmation.html" method="GET">
-            <h1 class="booking-title">Book Your Room Now!</h1>
-            <p>All fields are required</p><br>
-            <fieldset>
-               <legend>Guest Information:</legend><br>
-               <label for="first-name">First Name: </label><input id="first-name" type="text" name="name" required
-                  autofocus placeholder="Your first name" pattern="[a-zA-Z]{3,}"
-                  title="Please enter in more than three letters">
-               <br>
-               <label for="last-name">Last Name: </label><input id="last-name" type="text" name="name" required
-                  autofocus placeholder="Your last name" pattern="[a-zA-Z]{3,}"
-                  title="Please enter in more than three letters">
-               <br>
-               <label for="email">Email: </label><input id="email" type="text" name="email" required
-                  placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,}"
-                  title="Please enter in a valid email address">
-               <br>
-               <label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required
-                  placeholder="Please enter your phone number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-                  title="Please enter in a phone number in this format: ### ### ####">
-               <select name="country" required>
-                  <option value="">select</option>
-                  <option value="US">US</option>
-                  <option value="BR">BR</option>
-               </select>
-            </fieldset>
+      <!-- Simulate a smartphone / tablet -->
+      <div class="mobile-container">
+
+         <!-- Top Navigation Menu -->
+         <div class="topnav">
+            <a href="./index.html" class="active">Temple-Inn & Suites</a>
+            <div id="myLinks">
+               <a href="./index.html">Home</a>
+               <a href="./temples.html">Temples</a>
+               <a href="./reservations.html">Reservation</a>
+               <a href="./services.html">Services</a>
+               <a href="./contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
+               <i class="fa fa-bars"></i>
+            </a>
+            <!-- <div class="headers">
+               <div class="logo">
+                  <img src="/temple-inn/images/hotel-logo.png">
+               </div>
+               <div>
+                  <nav id="page-nav">
+                     <button onclick="toggleMenu()">&#9776;</button>
+                     <ul id="main-nav">
+                        <li><a href="./index.html" title="Home Page">Home</a></li>
+                        <li><a href="./temples.html" title="Temples Page">Temples</a></li>
+                        <li><a href="./reservations.html" title="Reservations Page">Reservations</a></li>
+                        <li><a href="./services.html" title="Services Page">Services</a></li>
+                        <li><a href="./contact.html" title="Contact Page">Contact</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div> -->
+   </header>
+
+   <section id="reserve">
+      <form action="" method="GET">
+         <h1 class="booking-title">Book Your Room Now!</h1>
+         <p>All fields are required</p><br>
+         <fieldset>
+            <legend>Guest Information:</legend>
+            <br>
+
+            <label for="first-name">First Name: </label>
+            <input id="first-name" type="text" name="name" required autofocus placeholder="Your first name"
+               pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters">
+            <br>
+
+            <label for="last-name">Last Name: </label>
+            <input id="last-name" type="text" name="name" required autofocus placeholder="Your last name"
+               pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters">
+            <br>
+
+            <label for="email">Email: </label>
+            <input id="email" type="text" name="email" required placeholder="Your Email"
+               pattern="[a-zA-Z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in a valid email address">
+            <br>
+
+            <label for="phone">Phone: </label>
+            <input id="phone" type="tel" name="phone" required placeholder="Please enter your phone number"
+               pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter in a phone number in this format: ### ### ####">
+            <select name="country" id="country" required>
+               <option value="">select</option>
+               <option value="US">US</option>
+               <option value="BR">BR</option>
+            </select>
+         </fieldset>
          <br>
 
          <fieldset>
             <legend>Booking Details: </legend><br>
             <label for="temple">Location:</label>
-            <select name="temple" required>
+            <select name="temple" id="location" required>
                <option value=""><i>select</i></option>
                <option value="sao-paulo">São Paulo</option>
                <option value="logan">Logan</option>
                <option value="nauvoo">Nauvoo</option>
                <option value="jordan-river">Jordan River</option>
             </select><br>
-            <label for="check-in-date">Check-in Date: </label> <input id="check-in-date" type="date" name="date" min="2019-12-09" required>
+
+            <label for="check-in-date">Check-in Date: </label>
+            <input id="check-in-date" type="date" name="date" min="2019-12-09" required>
             <br>
-            <label for="check-out-date">Check-in Date: </label> <input id="check-out-date" type="date" name="date" min="2019-12-09" required>
+
+            <label for="check-out-date">Check-in Date: </label>
+            <input id="check-out-date" type="date" name="date" min="2019-12-09" required>
             <br>
-            <label for="numberOfGuests">Number of Guests: </label><input id="numberOfGuests" type="number"
-               name="numberOfGuests" min="1" max="6" required>
+
+            <label for="numberOfGuests">Number of Guests: </label>
+            <input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6" required>
+
             <p>Do you require meals?</p>
-            <label for="yesMeals">Yes: </label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
-            <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals" >
+            <label for="yesMeals">Yes: </label>
+            <input id="yesMeals" type="radio" name="meals" value="yesMeals">
+
+            <label for="noMeals">No: </label>
+            <input id="noMeals" type="radio" name="meals" value="noMeals">
             <br>
-            <label for="balcony">Do you require a balcony? </label><input id="balcony" type="checkbox" name="balcony"
-               value="yes" checked>
+            <label for="balcony">Do you require a balcony? </label>
+            <input id="balcony" type="checkbox" name="balcony" value="yes" checked>
             <br>
             <!-- <a href="./thank-you.html" class="submit-btn" id="submit-button">SUBMIT</a> -->
-            <input type="image" src="./images/submit-button.png" alt="Submit">
+            <input type="image" id="submition"  src="./images/submit-button.png" alt="Submit">
 
          </fieldset>
       </form>
+   </section>
 
+   <!-- <div id="thank-you" class="hide">
 
-      </section>
+      <h1>Thank you for contacting us</h1>
+   </div>
+   <div id="thank-you-hours" class="hide">
+      <p>We will respond within 48 hours</p>
+
+      <a href="index.html">Click Here to return home</a>
+
+   </div> -->
 
    </main>
    <footer>
       &copy; <span id="copyright-year"></span> Gui Nascimento | Last updated:
       <span id="lastupdated"></span>
    </footer>
-   <script src="/temple-inn/js/js.js"></script>
+   <script src="/temple-inn/js/home.js"></script>
    <script src="./js/footer.js"></script>
 
 </body>

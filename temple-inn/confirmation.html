@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./css/home.css">
+   <title>Confirmation</title>
 </head>
+
 <body>
-   <!-- Simulate a smartphone / tablet -->
-   <div class="mobile-container">
+   <header>
+      <!-- Simulate a smartphone / tablet -->
+      <div class="mobile-container">
 
          <!-- Top Navigation Menu -->
          <div class="topnav">
@@ -23,6 +28,26 @@
             <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
                <i class="fa fa-bars"></i>
             </a>
-   
+   </header>
+   <main>
+      <div id="thank-you">
+
+         <h1>Thank you for contacting us</h1>
+      </div>
+      <div id="thank-you-hours">
+         <p>We will respond within 48 hours</p>
+
+         <a href="index.html">Click Here to return home</a>
+
+      </div>
+   </main>
+   <footer>
+      &copy; <span id="copyright-year"></span> Gui Nascimento | Last updated:
+      <span id="lastupdated"></span>
+   </footer>
+   <script src="/temple-inn/js/home.js"></script>
+   <script src="./js/footer.js"></script>
+
 </body>
+
 </html>
