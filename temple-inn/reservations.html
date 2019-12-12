@@ -57,24 +57,24 @@
             <br>
 
             <label for="first-name">First Name: </label>
-            <input id="first-name" type="text" name="name" required autofocus placeholder="Your first name"
+            <input id="first-name" type="text" name="name"  autofocus placeholder="Your first name"
                pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters">
             <br>
 
             <label for="last-name">Last Name: </label>
-            <input id="last-name" type="text" name="name" required autofocus placeholder="Your last name"
+            <input id="last-name" type="text" name="name"  autofocus placeholder="Your last name"
                pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters">
             <br>
 
             <label for="email">Email: </label>
-            <input id="email" type="text" name="email" required placeholder="Your Email"
+            <input id="email" type="text" name="email"  placeholder="Your Email"
                pattern="[a-zA-Z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in a valid email address">
             <br>
 
             <label for="phone">Phone: </label>
-            <input id="phone" type="tel" name="phone" required placeholder="Please enter your phone number"
+            <input id="phone" type="tel" name="phone"  placeholder="Please enter your phone number"
                pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter in a phone number in this format: ### ### ####">
-            <select name="country" id="country" required>
+            <select name="country" id="country" >
                <option value="">select</option>
                <option value="US">US</option>
                <option value="BR">BR</option>
@@ -85,7 +85,7 @@
          <fieldset>
             <legend>Booking Details: </legend><br>
             <label for="temple">Location:</label>
-            <select name="temple" id="location" required>
+            <select name="temple" id="location" >
                <option value=""><i>select</i></option>
                <option value="sao-paulo">São Paulo</option>
                <option value="logan">Logan</option>
@@ -94,15 +94,15 @@
             </select><br>
 
             <label for="check-in-date">Check-in Date: </label>
-            <input id="check-in-date" type="date" name="date" min="2019-12-09" required>
+            <input id="check-in-date" type="date" name="date" min="2019-12-09" >
             <br>
 
             <label for="check-out-date">Check-Out Date: </label>
-            <input id="check-out-date" type="date" name="date" min="2019-12-09" required>
+            <input id="check-out-date" type="date" name="date" min="2019-12-09" >
             <br>
 
             <label for="numberOfGuests">Number of Guests: </label>
-            <input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6" required>
+            <input id="numberOfGuests" type="number" name="numberOfGuests" min="1" max="6" >
 
             <p>Do you require meals?</p>
             <label for="yesMeals">Yes: </label>

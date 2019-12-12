@@ -352,7 +352,7 @@ button {
 
 /* End Contact Page */
 
-/* Thank you Page */
+/* Confirmation Page */
 
 #thank-you {
    font-family: Monotype Garamond,Garamond,serif;
@@ -378,4 +378,22 @@ button {
    text-align: center;
    display: inline-block;
    font-size: 20px;
+}
+
+/* End of Confirmation Page */
+
+/* Thank you Page */
+
+.confirmation {
+   font-family: Monotype Garamond,Garamond,serif;
+   background-color: rgba(124, 124, 124, 0.4);
+   border-radius: 1em;
+   list-style: none;
+   width: 90%;
+   color: #fff;
+   margin: 2%;
+   padding: 0.8em;
+   text-align: center;
+   display: inline-block;
+   font-size: 12px;
 }
