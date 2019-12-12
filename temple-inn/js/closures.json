@@ -1,6 +1,6 @@
 {
   "Logan": {
-    "2020": {
+    "Year2020": {
       "January": "Wednesday, 1",
       "February": "Monday, 10 - Monday, 24",
       "April": "April, 4",
@@ -22,17 +22,8 @@
     }
   },
 
-  "Jordan River": {
-    "2019": {
-      "December": [
-        "Monday, 9",
-        "Tuesday, 24",
-        "Wednesday, 25",
-        "Tuesday, 31 (Limited Hours)"
-      ]
-    },
-
-    "2020": {
+  "JordanRiver": {
+    "Year2020": {
       "January": "Wednesday, 1",
       "April": "Saturday, 4",
       "June": "Monday, 8 - Monday, 22",
@@ -52,17 +43,13 @@
         "Thursday, 31 (Limited Hours)"
       ]
     },
-    "2021": {
+    "Year2021": {
       "January": "Friday, 1"
     }
   },
 
   "Nauvoo": {
-    "2019": {
-      "December": "Wednesday, 25"
-    },
-
-    "2020": {
+    "Year2020": {
       "April": [
         "Saturday, 4",
         "Tuesday, 7 - Thursday, 30"
@@ -77,16 +64,8 @@
     }
   },
 
-  "São Paulo": {
-    "2019": {
-      "December": [
-        "Tuesday, 24",
-        "Wednesday, 25",
-        "Tuesday, 31"
-      ]
-    },
-
-    "2020": {
+  "SaoPaulo": {
+    "Year2020": {
       "January": "Wednesday, 1",
       "April": "Saturday, 4",
       "August": "Monday, 10 - Monday, 24",
@@ -100,7 +79,7 @@
       ]
     },
 
-    "2021": {
+    "Year2021": {
       "January": [
         "Friday, 1",
         "Satuday, 2"
@@ -116,7 +95,7 @@
         "Thursday, 31"
       ]
     },
-    "2022": {
+    "Year2022": {
       "January": "Saturday, 1"
     }
 

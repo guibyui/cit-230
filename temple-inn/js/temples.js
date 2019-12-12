@@ -25,7 +25,7 @@ function toggleMenuButton() {
 
 toggleMenuButton();
 
-var json = '/temple-inn/js/closures.json';
+var json = "/temple-inn/js/closures.json";
 
 function getJson(json) {
    fetch(json)
@@ -39,10 +39,19 @@ function getJson(json) {
       .then(function(data) {
          // Let's see what we got back
          console.log(data);
+         console.log("templeJson");
 
-         // Store current weather information to sessionStorage 
-         let templeClosure = convertCelcius(data.Logan.temperature.value);
+         document.getElementById("january").innerHTML = data.Logan.Year2020;
+
+         console.log(templeJson);
       }) .catch(function(error){
          
       })
+}
+
+getJson(json);
+
+function displayClosures(){
+   
+
 }
