@@ -49,7 +49,7 @@
    </header>
 
    <section id="reserve">
-      <form action="" method="GET">
+      <form action="./thank-you.html" method="GET">
          <h1 class="booking-title">Book Your Room Now!</h1>
          <p>All fields are required</p><br>
          <fieldset>
@@ -97,7 +97,7 @@
             <input id="check-in-date" type="date" name="date" min="2019-12-09" required>
             <br>
 
-            <label for="check-out-date">Check-in Date: </label>
+            <label for="check-out-date">Check-Out Date: </label>
             <input id="check-out-date" type="date" name="date" min="2019-12-09" required>
             <br>
 
@@ -106,16 +106,15 @@
 
             <p>Do you require meals?</p>
             <label for="yesMeals">Yes: </label>
-            <input id="yesMeals" type="radio" name="meals" value="yesMeals">
+            <input id="yesMeals" type="radio" name="meals" value="Yes">
 
             <label for="noMeals">No: </label>
-            <input id="noMeals" type="radio" name="meals" value="noMeals">
+            <input id="noMeals" type="radio" name="meals" value="No">
             <br>
             <label for="balcony">Do you require a balcony? </label>
-            <input id="balcony" type="checkbox" name="balcony" value="yes" checked>
+            <input id="balcony" type="checkbox" name="balcony" value="Yes" checked>
             <br>
-            <!-- <a href="./thank-you.html" class="submit-btn" id="submit-button">SUBMIT</a> -->
-            <input type="image" id="submition"  src="./images/submit-button.png" alt="Submit">
+            <input type="submit" id="submition"  src="./images/submit-button.png" alt="Submit">
 
          </fieldset>
       </form>
