@@ -1,24 +1,15 @@
 {
+  "Temple":{
   "Logan": {
     "Year2020": {
       "January": "Wednesday, 1",
       "February": "Monday, 10 - Monday, 24",
       "April": "April, 4",
-      "July": [
-        "Saturday, 4",
-        "Monday, 20 - Friday, 31"
-      ],
+      "July": "Saturday, 4 and Monday, 20 - Friday, 31",
       "August": "Sunday, 1 - Tuesday, 3",
       "October": "Saturday, 3",
-      "November": [
-        "Wednesday, 25 (Limited Hours)",
-        "Thursday, 26"
-      ],
-      "December ": [
-        "Thursday, 24",
-        "Friday, 25",
-        "Thursday, 31 (Limited Hours)"
-      ]
+      "November": "Wednesday, 25 (Limited Hours) and Thursday, 26",
+      "December": "Thursday, 24, Friday, 25, and Thursday, 31 (Limited Hours)"
     }
   },
 
@@ -100,4 +91,5 @@
     }
 
   }
+}
 }
