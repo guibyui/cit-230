@@ -98,29 +98,23 @@ function getJson(json) {
          jrJanuaryId.innerHTML = sessStore.getItem("JordanRiverJanuary");
          // document.getElementById("january").innerHTML = data.JordanRiver.Year2020;
 
-         let JordanRiverFebruary = p.JordanRiver.Year2020["February"];
-         sessStore.setItem("JordanRiverFebruary", JordanRiverFebruary);
-         console.log(`JordanRiver February is: ${JordanRiverFebruary}`);
-         let jrFebruaryId = document.querySelector('#JordanRiverFebruary');
-         jrFebruaryId.innerHTML = sessStore.getItem("JordanRiverFebruary");
-
          let JordanRiverApril = p.JordanRiver.Year2020["April"];
          sessStore.setItem("JordanRiverApril", JordanRiverApril);
          console.log(`JordanRiver February is: ${JordanRiverApril}`);
          let frAprilId = document.querySelector('#JordanRiverApril');
          frAprilId.innerHTML = sessStore.getItem("JordanRiverApril");
 
+         let JordanRiverJune = p.JordanRiver.Year2020["June"];
+         sessStore.setItem("JordanRiverJune", JordanRiverJune);
+         console.log(`JordanRiver February is: ${JordanRiverJune}`);
+         let jrJuneId = document.querySelector('#JordanRiverJune');
+         jrJuneId.innerHTML = sessStore.getItem("JordanRiverJune");
+
          let JordanRiverJuly = p.JordanRiver.Year2020["July"];
          sessStore.setItem("JordanRiverJuly", JordanRiverJuly);
          console.log(`JordanRiver February is: ${JordanRiverJuly}`);
          let jrJulyId = document.querySelector('#JordanRiverJuly');
          jrJulyId.innerHTML = sessStore.getItem("JordanRiverJuly");
-
-         let JordanRiverAugust = p.JordanRiver.Year2020["August"];
-         sessStore.setItem("JordanRiverAugust", JordanRiverAugust);
-         console.log(`JordanRiver February is: ${JordanRiverAugust}`);
-         let jrAugustId = document.querySelector('#JordanRiverAugust');
-         jrAugustId.innerHTML = sessStore.getItem("JordanRiverAugust");
 
          let JordanRiverOctober = p.JordanRiver.Year2020["October"];
          sessStore.setItem("JordanRiverOctober", JordanRiverOctober);
@@ -148,23 +142,11 @@ function getJson(json) {
          spJanuaryId.innerHTML = sessStore.getItem("SaoPauloJanuary");
          // document.getElementById("january").innerHTML = data.SaoPaulo.Year2020;
 
-         let SaoPauloFebruary = p.SaoPaulo.Year2020["February"];
-         sessStore.setItem("SaoPauloFebruary", SaoPauloFebruary);
-         console.log(`SaoPaulo February is: ${SaoPauloFebruary}`);
-         let spFebruaryId = document.querySelector('#SaoPauloFebruary');
-         spFebruaryId.innerHTML = sessStore.getItem("SaoPauloFebruary");
-
          let SaoPauloApril = p.SaoPaulo.Year2020["April"];
          sessStore.setItem("SaoPauloApril", SaoPauloApril);
          console.log(`SaoPaulo February is: ${SaoPauloApril}`);
          let spAprilId = document.querySelector('#SaoPauloApril');
          spAprilId.innerHTML = sessStore.getItem("SaoPauloApril");
-
-         let SaoPauloJuly = p.SaoPaulo.Year2020["July"];
-         sessStore.setItem("SaoPauloJuly", SaoPauloJuly);
-         console.log(`SaoPaulo February is: ${SaoPauloJuly}`);
-         let spJulyId = document.querySelector('#SaoPauloJuly');
-         spJulyId.innerHTML = sessStore.getItem("SaoPauloJuly");
 
          let SaoPauloAugust = p.SaoPaulo.Year2020["August"];
          sessStore.setItem("SaoPauloAugust", SaoPauloAugust);
@@ -177,12 +159,6 @@ function getJson(json) {
          console.log(`SaoPaulo February is: ${SaoPauloOctober}`);
          let spOctoberId = document.querySelector('#SaoPauloOctober');
          spOctoberId.innerHTML = sessStore.getItem("SaoPauloOctober");
-
-         let SaoPauloNovember = p.SaoPaulo.Year2020["November"];
-         sessStore.setItem("SaoPauloNovember", SaoPauloNovember);
-         console.log(`SaoPaulo February is: ${SaoPauloNovember}`);
-         let spNovemberId = document.querySelector('#SaoPauloNovember');
-         spNovemberId.innerHTML = sessStore.getItem("SaoPauloNovember");
 
          let SaoPauloDecember = p.SaoPaulo.Year2020["December"];
          sessStore.setItem("SaoPauloDecember", SaoPauloDecember);
