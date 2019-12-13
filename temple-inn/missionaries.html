@@ -7,7 +7,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="/temple-inn/css/home.css">
-   <title>Contact</title>
+   <title>Services</title>
 </head>
 
 <body>
@@ -37,14 +37,21 @@
          </ul>
       </nav> -->
 
+      <section class="receptions">
+         <h1><i>Long-term Accomodations</i></h1>
+         <p>We offet Studio Rooms with a Queen-size bed and a kitchenette or 1 bedroom Suites with King-size bed and a full kitchen. Both include basic kitchen cookware and appliances, dinnerware, glassware, and silverware. Washer and Dryer also included.</p>
+         <p>View picture below:</p>
+         <img src="./images/full-kitchen.jpg" alt="Image of a reception table" class="column-image">
+      </section>
+
       <section>
          <form action="thank-you.html" method="GET">
-            <h1 class="booking-title">Book Your Room Now!</h1>
+            <h1 class="booking-title">Contact us to learn more about our long-term stay packges!</h1>
             <p>All fields are required</p><br>
             <fieldset>
                <legend>Guest Information:</legend><br>
                <label for="prefix">Prefix:</label>
-               <select name="prefix" required>
+               <select name="prefix">
                   <option value=""><i>select</i></option>
                   <option value="none">None</option>
                   <option value="mr">Mr.</option>
@@ -52,44 +59,26 @@
                   <option value="ms">Ms.</option>
                   <option value="miss">Miss</option>
                </select><br>
-               <label for="first-name">First Name: </label><input id="first-name" type="text" name="name" required
+               <label for="first-name">First Name: </label>
+               <input id="first-name" type="text" name="name" 
                   autofocus placeholder="Your first name" pattern="[a-zA-Z]{3,}"
                   title="Please enter in more than three letters">
                <br>
-               <label for="last-name">Last Name: </label><input id="last-name" type="text" name="name" required
-                  autofocus placeholder="Your last name" pattern="[a-zA-Z]{3,}"
-                  title="Please enter in more than three letters">
-               <br>
-               <label for="email">Email: </label><input id="email" type="text" name="email" required
+               <label for="email">Email: </label>
+               <input id="email" type="text" name="email" 
                   placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-z]{3,}[.]{1}[a-zA-Z]{2,}"
                   title="Please enter in a valid email address">
                <br>
-               <label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required
-                  placeholder="Please enter your phone number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-                  title="Please enter in a phone number in this format: ### ### ####">
-               <select name="country" required>
-                  <option value="">select</option>
-                  <option value="US">US</option>
-                  <option value="BR">BR</option>
-               </select>
+               <label for="subject">Subject: </label>
+               <input type="text" name="subject" id="subject" 
+                  placeholder="Please enter the subject" pattern="[a-zA-Z]{3,}"
+                  title="Please enter in what you would like our help">
                <br>
                <div class="text-box">
                   <div class="TextareaField"><label class="formElement-label" for="text">How can we help
                         you?</label><textarea class="TextareaField-field" id="text" name="text"></textarea></div>
                </div>
             </fieldset>
-            <button class="contact-submit" type="submit">Submit</button>
-         </form>
-
-      </section>
-
-      <div class="map">
-         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4048370284836!2d-77.09772048524347!3d38.98325594948485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576191727190!5m2!1sen!2sus"
-            width="350" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-
-
 
    </main>
    <footer>

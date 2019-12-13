@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <meta name="author" content="Gui Nascimento">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
    <link rel="stylesheet" href="/temple-inn/css/home.css">
 
    <title>Temple-Inn & Suites</title>
@@ -14,26 +14,21 @@
 
 <body>
    <header>
-
-      <!-- Simulate a smartphone / tablet -->
-      <div class="mobile-container">
-
-         <!-- Top Navigation Menu -->
-         <div class="topnav">
-            <a href="#" class="active">Temple-Inn & Suites</a>
-            <div id="myLinks">
-               <a href="./index.html">Home</a>
-               <a href="./temples.html">Temples</a>
-               <a href="./reservations.html">Reservation</a>
-               <a href="./services.html">Services</a>
-               <a href="./contact.html">Contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
-               <i class="fa fa-bars"></i>
-            </a>
+      <!-- Top Navigation Menu -->
+      <div class="topnav" id="myTopnav">
+         <a href="#home" class="active"><b><i>Temple-Inn and Suits</i></b></a>
+         <a href="./index.html">Home</a>
+         <a href="./temples.html">Temples</a>
+         <a href="./reservations.html">Reservation</a>
+         <a href="./services.html">Services</a>
+         <a href="./contact.html">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
+            <i class="fa fa-bars">&#9776;</i>
+         </a>
+      </div>
 
 
-            <!-- <div class="headers">
+      <!-- <div class="headers">
          <div class="logo">
             <img src="/temple-inn/images/hotel-logo.png">
          </div>
@@ -84,7 +79,7 @@
    </main>
 
    <footer>
-      &copy; <span id="copyright-year"></span> 
+      &copy; <span id="copyright-year"></span>
       Gui Nascimento | Last updated:
       <span id="lastupdated"></span>
       <a href="./contact.html">Contact us</a>

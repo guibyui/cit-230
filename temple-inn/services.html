@@ -11,24 +11,20 @@
 </head>
 
 <body>
-      <header>
-            <!-- Simulate a smartphone / tablet -->
-            <div class="mobile-container">
-         
-                  <!-- Top Navigation Menu -->
-                  <div class="topnav">
-                     <a href="./index.html" class="active">Temple-Inn & Suites</a>
-                     <div id="myLinks">
-                        <a href="./index.html">Home</a>
-                        <a href="./temples.html">Temples</a>
-                        <a href="./reservations.html">Reservation</a>
-                        <a href="./services.html">Services</a>
-                        <a href="./contact.html">Contact</a>
-                     </div>
-                     <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
-                        <i class="fa fa-bars"></i>
-                     </a>
-                  </header>
+   <header>
+      <!-- Top Navigation Menu -->
+      <div class="topnav" id="myTopnav">
+         <a href="#home" class="active"><b><i>Temple-Inn and Suits</i></b></a>
+         <a href="./index.html">Home</a>
+         <a href="./temples.html">Temples</a>
+         <a href="./reservations.html">Reservation</a>
+         <a href="./services.html">Services</a>
+         <a href="./contact.html">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="toggleMenuButton()">
+            <i class="fa fa-bars"></i>
+         </a>
+      </div>
+   </header>
    <main>
       <!-- <nav id="page-nav">
          <button onclick="toggleMenu()">&#9776;</button>
@@ -40,6 +36,57 @@
             <li><a href="./contact.html" title="Contact Page">Contact</a></li>
          </ul>
       </nav> -->
+
+      <section class="specialized-services">
+         <h1><i>Specialized Services</i></h1>
+         <ul>
+            <li>Free access to changing rooms and bathrooms facilities for temple patrons</li>
+            <li>A playroom and low-cost, short-term babysitting services for children</li>
+            <li>Long-term stay accommodations in kitchenette suits for full-time temple missionaries</li>
+            <li>Temple history themed reception and sitting area</li>
+            <li>Wedding reception hall that can be easily customized with a simple catering menu and kitchen access for
+               food preparation and serving</li>
+            <li>A family search center that supports family search and ordinance work</li>
+         </ul>
+         <img src="./images/play-room.jpg" alt="Image of a play room" class="column-image">
+      </section>
+
+      <section class="free-amenities">
+         <h1><i>Free Amenities</i></h1>
+         <ul>
+            <li>Breakfast</li>
+            <li>Fitness Center</li>
+            <li>Indoor Pool</li>
+            <li>High Speed Internet access</li>
+            <li>Smart TV</li>
+            <li>Parking</li>
+            <li>Tample Shuttle</li>
+            <li>Family History consultation</li>
+            <li>Family ordinance card service</li>
+         </ul>
+         <img src="./images/family-history-center.jpg" alt="Image of a play room" class="column-image">
+
+      </section>
+
+      <div>
+
+         <section class="reception">
+            <h1><i>Reception Center</i></h1>
+
+            <img src="./images/reception-center.jpg" alt="Image of a play room" class="column-image">
+
+            <a href="./reception.html">Please Visit our Reception Page</a>
+         </section>
+
+         <section class="missionaries">
+            <h1><i>Full-time Missionaries</i></h1>
+
+            <img src="./images/missionaries.jfif" alt="Image of a play room" class="column-image">
+
+            <a href="./missionaries.html">Please Visit our Temple Missionaries Page</a>
+         </section>
+
+      </div>
 
 
 

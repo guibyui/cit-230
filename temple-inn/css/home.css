@@ -14,64 +14,72 @@ body {
 }
 
 header {
-   background-color: bisque;
+   background-color: burlywood;
+   padding: 2%;
+   margin: 2%;
+
 }
 
-.mobile-container {
-   /* max-width: 480px; */
-   margin: auto;
-   /* background-color: #555; */
-   /* height: 500px; */
-   color: white;
-   border-radius: 10px;
- }
- 
- .topnav {
+.topnav {
    overflow: hidden;
    background-color: bisque;
-   position: relative;
- }
- 
- .topnav #myLinks {
-   display: none;
- }
- 
- .topnav a {
+}
+
+.topnav a {
+   float: left;
+   display: block;
    color: #000;
-   padding: 3px;
+   text-align: center;
+   padding: 14px 16px;
    text-decoration: none;
    font-size: 17px;
-   display: block;
- }
- 
- .topnav a.icon {
-   display: block;
-   position: absolute;
-   right: 0;
-   top: 0;
- }
- 
- .topnav a:hover {
+}
+
+.topnav a:hover {
    background-color: #ddd;
    color: black;
- }
- 
- .active {
-   background-color: burlywood;
-   color: white;
-   height: 30px;
-   margin: 2%;
- }
-
-.icon {
-   margin: 2%;
-   width: 30px;
-   height: 30px;
 }
 
-#myLinks {
-   text-align: center;
+.topnav a.active {
+   background-color: bisque;
+   color: #000;
 }
+
+.topnav .icon {
+   display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+   .topnav a:not(:first-child) {
+      display: none;
+   }
+
+   .topnav a.icon {
+      float: right;
+      display: block;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .topnav.responsive {
+      position: relative;
+   }
+
+   .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+
+   .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+   }
+}
+
+
 
 /* 
 nav ul {
@@ -199,7 +207,7 @@ footer {
    margin-left: auto;
    margin-right: auto;
    color: #fff;
-   
+
    /* position: absolute; */
    /* top: 30%; */
    /* left: 50%; */
@@ -294,7 +302,7 @@ li {
    header {
       font-size: 3vw;
    }
-   
+
    body {
       max-width: 85%;
    }
@@ -343,6 +351,12 @@ li {
    color: #fff;
 }
 
+
+ul button {
+   margin-right: auto;
+   margin-left: auto;
+}
+
 button {
    background: none;
    border-radius: 0;
@@ -359,7 +373,7 @@ button {
 /* Confirmation Page */
 
 #thank-you {
-   font-family: Monotype Garamond,Garamond,serif;
+   font-family: Monotype Garamond, Garamond, serif;
    background-color: rgba(124, 124, 124, 0.4);
    border-radius: 1em;
    list-style: none;
@@ -389,7 +403,7 @@ button {
 /* Thank you Page */
 
 .confirmation {
-   font-family: Monotype Garamond,Garamond,serif;
+   font-family: Monotype Garamond, Garamond, serif;
    background-color: rgba(124, 124, 124, 0.4);
    border-radius: 1em;
    list-style: none;

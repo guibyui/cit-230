@@ -14,17 +14,27 @@ function onPageLoad() {
 window.onload = onPageLoad();
 
 
+// function toggleMenuButton() {
+//    var x = document.getElementById("myLinks");
+//    if (x.style.display === "block") {
+//       x.style.display = "none";
+//    } else {
+//       x.style.display = "block";
+//    }
+// }
+
+// toggleMenuButton();
+
+
 function toggleMenuButton() {
-   var x = document.getElementById("myLinks");
-   if (x.style.display === "block") {
-      x.style.display = "none";
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+     x.className += " responsive";
    } else {
-      x.style.display = "block";
+     x.className = "topnav";
    }
-}
-
-toggleMenuButton();
-
+ }
+ 
 var submit = document.getElementById("submition");
 
 submit.addEventListener("click", function () {
