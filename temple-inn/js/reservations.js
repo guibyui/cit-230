@@ -8,7 +8,7 @@ function getData() {
    firstNameId.innerHTML = sessStore.getItem("firstName");
 
    let lastNameId = document.getElementById("lastNameId");
-   lastNameId.innerHTML = sessStore.getItem("lastName");
+   lastNameId.innerHTML = sessStore.getItem("last-name");
 
    let emailAddressId = document.getElementById("emailAddressId");
    emailAddressId.innerHTML = sessStore.getItem("email");
@@ -26,7 +26,7 @@ function getData() {
    checkInDateId.innerHTML = sessStore.getItem("check-in-date");
 
    let checkOutDateId = document.getElementById("checkOutDateId");
-   checkOutDateId.innerHTML = sessStore.getItem("check-out-dateId");
+   checkOutDateId.innerHTML = sessStore.getItem("check-out-date");
 
    let numberOfGuestsId = document.getElementById("numberOfGuestsId");
    numberOfGuestsId.innerHTML = sessStore.getItem("numberOfGuests");

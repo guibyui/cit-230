@@ -166,6 +166,38 @@ function getJson(json) {
          let spDecemberId = document.querySelector('#SaoPauloDecember');
          spDecemberId.innerHTML = sessStore.getItem("SaoPauloDecember");
 
+         // Nauvoo Temple Closure
+         let NauvooJanuary = p.Nauvoo.Year2020["January"];
+         sessStore.setItem("NauvooJanuary", NauvooJanuary);
+         console.log(`Nauvoo January is: ${NauvooJanuary}`);
+         let naJanuaryId = document.querySelector('#NauvooJanuary');
+         naJanuaryId.innerHTML = sessStore.getItem("NauvooJanuary");
+         // document.getElementById("january").innerHTML = data.Nauvoo.Year2020;
+
+         let NauvooApril = p.Nauvoo.Year2020["April"];
+         sessStore.setItem("NauvooApril", NauvooApril);
+         console.log(`Nauvoo February is: ${NauvooApril}`);
+         let naAprilId = document.querySelector('#NauvooApril');
+         naAprilId.innerHTML = sessStore.getItem("NauvooApril");
+
+         let NauvooAugust = p.Nauvoo.Year2020["August"];
+         sessStore.setItem("NauvooAugust", NauvooAugust);
+         console.log(`Nauvoo February is: ${NauvooAugust}`);
+         let naAugustId = document.querySelector('#NauvooAugust');
+         naAugustId.innerHTML = sessStore.getItem("NauvooAugust");
+
+         let NauvooOctober = p.Nauvoo.Year2020["October"];
+         sessStore.setItem("NauvooOctober", NauvooOctober);
+         console.log(`Nauvoo February is: ${NauvooOctober}`);
+         let naOctoberId = document.querySelector('#NauvooOctober');
+         naOctoberId.innerHTML = sessStore.getItem("NauvooOctober");
+
+         let NauvooDecember = p.Nauvoo.Year2020["December"];
+         sessStore.setItem("NauvooDecember", NauvooDecember);
+         console.log(`Nauvoo February is: ${NauvooDecember}`);
+         let naDecemberId = document.querySelector('#NauvooDecember');
+         naDecemberId.innerHTML = sessStore.getItem("NauvooDecember");
+
 
          console.log(templeJson);
       }).catch(function (error) {
