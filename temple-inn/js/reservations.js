@@ -7,6 +7,8 @@ function getData() {
    let firstNameId = document.getElementById("firstNameId");
    firstNameId.innerHTML = sessStore.getItem("firstName");
 
+   firstNameId = "Name: " + firstNameId;
+
    let lastNameId = document.getElementById("lastNameId");
    lastNameId.innerHTML = sessStore.getItem("last-name");
 
