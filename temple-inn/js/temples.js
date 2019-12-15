@@ -167,11 +167,11 @@ function getJson(json) {
          spDecemberId.innerHTML = sessStore.getItem("SaoPauloDecember");
 
          // Nauvoo Temple Closure
-         let NauvooJanuary = p.Nauvoo.Year2020["January"];
-         sessStore.setItem("NauvooJanuary", NauvooJanuary);
-         console.log(`Nauvoo January is: ${NauvooJanuary}`);
-         let naJanuaryId = document.querySelector('#NauvooJanuary');
-         naJanuaryId.innerHTML = sessStore.getItem("NauvooJanuary");
+         // let NauvooJanuary = p.Nauvoo.Year2020["January"];
+         // sessStore.setItem("NauvooJanuary", NauvooJanuary);
+         // console.log(`Nauvoo January is: ${NauvooJanuary}`);
+         // let naJanuaryId = document.querySelector('#NauvooJanuary');
+         // naJanuaryId.innerHTML = sessStore.getItem("NauvooJanuary");
          // document.getElementById("january").innerHTML = data.Nauvoo.Year2020;
 
          let NauvooApril = p.Nauvoo.Year2020["April"];
@@ -180,17 +180,24 @@ function getJson(json) {
          let naAprilId = document.querySelector('#NauvooApril');
          naAprilId.innerHTML = sessStore.getItem("NauvooApril");
 
-         let NauvooAugust = p.Nauvoo.Year2020["August"];
-         sessStore.setItem("NauvooAugust", NauvooAugust);
-         console.log(`Nauvoo February is: ${NauvooAugust}`);
-         let naAugustId = document.querySelector('#NauvooAugust');
-         naAugustId.innerHTML = sessStore.getItem("NauvooAugust");
+         let NauvooMay = p.Nauvoo.Year2020["May"];
+         sessStore.setItem("NauvooMay", NauvooMay);
+         console.log(`Nauvoo May is: ${NauvooMay}`);
+         let naMayId = document.querySelector('#NauvooMay');
+         naMayId.innerHTML = sessStore.getItem("NauvooMay");
 
          let NauvooOctober = p.Nauvoo.Year2020["October"];
          sessStore.setItem("NauvooOctober", NauvooOctober);
          console.log(`Nauvoo February is: ${NauvooOctober}`);
          let naOctoberId = document.querySelector('#NauvooOctober');
          naOctoberId.innerHTML = sessStore.getItem("NauvooOctober");
+
+         let nauvooNovember = p.Nauvoo.Year2020["November"];
+         sessStore.setItem("NauvooNovember", loganNovember);
+         console.log(`Logan November is: ${nauvooNovember}`);
+         let naNovemberId = document.querySelector('#NauvooNovember');
+         naNovemberId.innerHTML = sessStore.getItem("NauvooNovember");
+
 
          let NauvooDecember = p.Nauvoo.Year2020["December"];
          sessStore.setItem("NauvooDecember", NauvooDecember);

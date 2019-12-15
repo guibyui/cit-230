@@ -1,7 +1,8 @@
 /* Main settings to all pages */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
-   font-family: 'Times New Roman', Times, serif;
+   /* font-family: 'Times New Roman', Times, serif; */
    padding: 0;
    margin: 0;
 }
@@ -168,7 +169,7 @@ footer {
 .title {
    /* display: flex; */
    /* flex-direction: column; */
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sao-paulo-temple.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sao-paulo-temple-large.jpg);
    /* height: 66vh; */
    background-size: contain;
    background-position: center;
@@ -280,6 +281,7 @@ li {
       padding: 1em;
       border-radius: 1em;
    }
+
 }
 
 /* End of temple page settings */
