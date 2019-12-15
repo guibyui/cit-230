@@ -9,7 +9,7 @@
 body {
    margin: auto;
    /* color: white; */
-   background-repeat: no-repeat;
+   /* background-repeat: no-repeat; */
    background-color: burlywood;
 }
 
@@ -146,12 +146,12 @@ footer {
    background-color: rgba(124, 124, 124, 0.4);
    border-radius: 1em;
    list-style: none;
-   max-width: 300px;
-   width: 90%;
+   /* max-width: 300px; */
+   /* width: 90%; */
    margin-left: auto;
    margin-right: auto;
    color: #fff;
-   font-size: 5vw;
+   font-size: 4vw;
    padding: 2%;
 
    /* position: absolute; */
@@ -405,6 +405,17 @@ button {
 
 .topnav .icon {
    display: none;
+}
+
+@media screen and (max-width: 600px) {
+   .topnav a:not(:first-child) {
+      /* display: none; */
+   }
+
+   .topnav a.icon {
+      float: right;
+      display: block;
+   }
 }
 
 @media screen and (min-width: 600px) {
