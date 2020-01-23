@@ -22,9 +22,11 @@ footer {
 	max-width: 767px;
 	margin: 0 auto;
 }
+
 h1 {
 	font-size: 2rem;
 }
+
 h2 {
 	color: #536878;
 }
@@ -34,12 +36,14 @@ nav {
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
 }
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 }
+
 nav li a {
 	display: block;
 	color: #fff;
@@ -48,18 +52,22 @@ nav li a {
 	text-decoration: none;
 	font-size: 0.95rem;
 }
+
 nav a:hover {
 	background-color: #bbb;
 	color: #36454f;
 }
+
 .active {
 	color: yellow;
 }
+
 main {
 	display: grid;
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 }
+
 main article {
 	margin: 0.5rem;
 	border: 1px solid #bbb;
@@ -75,7 +83,6 @@ main article {
 	float: none;
 	width: 70%;
 }
-
 
 main picture {
 	display: none;
@@ -96,11 +103,11 @@ footer {
 	*/
 
 	/* Grid *********************/
-			nav ul { 
-				display: grid;
-				/* grid-template-columns: repeat(5, 1fr); */
-				grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-			}
+	nav ul {
+		display: grid;
+		/* grid-template-columns: repeat(5, 1fr); */
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+	}
 
 	/* Inline-Block             */
 	/*
@@ -114,20 +121,24 @@ footer {
 			main {clear:both;}
 	*/
 
-/*******************************************************/
-	
+	/*******************************************************/
+
 	nav a {
 		font-size: 1rem;
 	}
+
 	main {
 		grid-template-columns: 1fr 1fr;
 	}
-	article:nth-child(3) {
-		grid-column: span 2;
+
+	article:nth-child(4) {
+		grid-column: span 1;
 	}
+
 	main picture {
 		display: block;
 	}
+
 	main picture img {
 		width: 100%;
 		height: auto;
@@ -140,10 +151,18 @@ footer {
 	nav a {
 		font-size: 1.1rem;
 	}
+
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
 	}
-	article:nth-child(3) {
-		grid-column: span 1;
+
+	article:nth-child(4) {
+		grid-column: span 3;
 	}
+
+	img {
+		max-width: 20%;
+	}
+
 }
